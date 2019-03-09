@@ -1,6 +1,6 @@
 # Movie Trailer App
 
-This a movie trailer web application created using the Flask framework as frontend and sqllite3 database and sqlalchemy. It has 3 basic features.
+This a movie trailer web application created using the Flask framework as frontend and sqllite3 database as backend and sqlalchemy as ORM. It has 3 basic features.
 1. Displays the list of movies in home page
 2. Displays the movie trailer and its story in single page when user click on a movie
 3. Add movie page which enables the user to add movie title,story,poster url and youtube url to database
