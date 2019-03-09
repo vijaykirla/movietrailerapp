@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Watch Movie trailers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="/static/css/styles.css">
+	<script src="/static/js/jquery-3.1.1.min.js"></script>	
+</head>
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<figure class="logo"><a href="{{ url_for('movies') }}"><img src="/static/images/logo.png"></figure></a>
+			<nav class="menu">
+				<ul>
+					<li><a href="{{ url_for('movies') }}">Home</a></li>
+					<li><a href="{{ url_for('addmovie') }}">Add Movie</a></li>
+					
+				</ul>
+			</nav>			
+		</header>
+		
+		<main class="content">
+				{% block body %}
+
+				{% endblock %}		  
+		</main>
+
+		<footer class="footer">
+			<div class="copyright"><p>Copyright &copy 2019 </p></div>
+		</footer>		
+	</div>
+</body>
+</html>

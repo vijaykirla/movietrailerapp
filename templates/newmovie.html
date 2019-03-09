@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<section class="centered">
+
+	<div class="">
+		<form id="myForm" action="./new" method="POST">
+
+			<input type='hidden' name='csrfmiddlewaretoken' value='XFe2rTYl9WOpV8U6X5CfbIuOZOELJ97S' />
+
+			{%- for category, message in get_flashed_messages(with_categories = true) %}
+			<div style="color:#e61041;">
+				{{ message }}
+			</div>
+			{%- endfor %}
+
+			<label for="title">Movie Title:</label>
+			<input type="text" name="title" id="title">
+
+			<label for="story">Movie story:</label>
+			<textarea id="story" name="story"></textarea>
+
+			<label for="poster_url">Movie poster url:</label>
+			<input type="text" name="poster_url" id="poster_url">
+
+			<label for="youtube_url">Youtube trailer url:</label>
+			<input type="text" name="youtube_url" id="youtube_url">
+
+			<input type="submit" name="submit" value="Save">
+		</form>
+
+
+	</div>
+	</div>
+</section>
+{% endblock %}
